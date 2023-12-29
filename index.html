@@ -11,19 +11,39 @@
 </head>
 <body>
    <header id="navigation-bar">
-       <h3 id="logo">Katik</h3>
+       <h3 id="logo">Welcome to Katik</h3>
        <nav class="navigation">
             <a href="">Triangle Area</a>
             <a href="">Triangle Circumference</a>
        </nav>
     </header>
+
     <section class="input-area-section">
-        <label for="'" id="label-height">Height</label>
-        <input type="number" name="height" id="input-height" class="katik-input">
+        <h2>Triangle Area Calculator</h2>
+        <label for="input-height" id="label-height">Height</label>
+        <input type="number" name="height" id="input-height" class="katik-input" placeholder="Enter height">
+        <label for="input-base" id="label-base">Base</label>
+        <input type="number" name="base" id="input-base" class="katik-input" placeholder="Enter base">
     </section>
     <div class="buttons">
         <button>Calculate</button>
         <button>Reset</button>
     </div>
+    <div id="result"></div>
+
+    <section class="input-circumference-section">
+        <h2>Triangle Circumference Calculator</h2>
+        <label for="input-side1" id="label-side1">Side 1</label>
+        <input type="number" name="side1" id="input-side1" class="katik-input" placeholder="Enter side 1">
+        <label for="input-side2" id="label-side2">Side 2</label>
+        <input type="number" name="side2" id="input-side2" class="katik-input" placeholder="Enter side 2">
+        <label for="input-side3" id="label-side3">Side 3</label>
+        <input type="number" name="side3" id="input-side3" class="katik-input" placeholder="Enter side 3">
+    </section>
+    <div class="buttons">
+        <button>Calculate</button>
+        <button>Reset</button>
+    </div>
+    <div id="result"></div>
 </body>
 </html>
