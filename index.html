@@ -8,42 +8,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=EB+Garamond:ital@1&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
    <header id="navigation-bar">
        <h3 id="logo">Welcome to Katik</h3>
        <nav class="navigation">
             <a href="">Triangle Area</a>
-            <a href="">Triangle Circumference</a>
+            <a href="">Triangle Perimeter</a>
        </nav>
     </header>
 
     <section class="input-area-section">
         <h2>Triangle Area Calculator</h2>
+        <img src="asset/area guide.png" alt="area guide" id="area-guide">
+        <p>Formula = 1/2 x height x base</p>
         <label for="input-height" id="label-height">Height</label>
         <input type="number" name="height" id="input-height" class="katik-input" placeholder="Enter height">
         <label for="input-base" id="label-base">Base</label>
         <input type="number" name="base" id="input-base" class="katik-input" placeholder="Enter base">
+        <div class="buttons">
+            <button onclick="calculateArea()">Calculate</button>
+            <button onclick="resetArea()">Reset</button>
+        </div>
+        <div id="area-result"></div>
     </section>
-    <div class="buttons">
-        <button>Calculate</button>
-        <button>Reset</button>
-    </div>
-    <div id="result"></div>
+    
 
-    <section class="input-circumference-section">
-        <h2>Triangle Circumference Calculator</h2>
-        <label for="input-side1" id="label-side1">Side 1</label>
-        <input type="number" name="side1" id="input-side1" class="katik-input" placeholder="Enter side 1">
-        <label for="input-side2" id="label-side2">Side 2</label>
-        <input type="number" name="side2" id="input-side2" class="katik-input" placeholder="Enter side 2">
-        <label for="input-side3" id="label-side3">Side 3</label>
-        <input type="number" name="side3" id="input-side3" class="katik-input" placeholder="Enter side 3">
+    <section class="input-perimeter-section">
+        <h2>Triangle Perimeter Calculator</h2>
+        <img src="asset/perimeter guide.png" alt="perimeter guide" id="perimeter-guide">
+        <p>Formula = side a + side b + side c</p>
+        <label for="input-side-a" id="label-side-a">Side a</label>
+        <input type="number" name="side-a" id="input-side-a" class="katik-input" placeholder="Enter side a">
+        <label for="input-side-b" id="label-side-b">Side b</label>
+        <input type="number" name="side-b" id="input-side-b" class="katik-input" placeholder="Enter side b">
+        <label for="input-side-c" id="label-side-c">Side c</label>
+        <input type="number" name="side-c" id="input-side-c" class="katik-input" placeholder="Enter side c">
+        <div class="buttons">
+            <button onclick="calculatePerimeter()">Calculate</button>
+            <button onclick="resetPerimeter()">Reset</button>
+        </div>
+        <div id="perimeter-result"></div>
     </section>
-    <div class="buttons">
-        <button>Calculate</button>
-        <button>Reset</button>
-    </div>
-    <div id="result"></div>
+    
 </body>
 </html>
